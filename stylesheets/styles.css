@@ -1,0 +1,812 @@
+@charset "utf-8";
+/*Font import*/
+@font-face{font-family: Neuwelt; src: url("../Fonts/FF.Neuwelt/Neuwelt-LightItalic.otf");}
+@font-face{font-family: NeuweltBackup; src: url("../Fonts/FF.Neuwelt/Neuwelt-LightItalic.ttf");}
+@font-face{font-family: Neuwelt; font-weight: bold; src: url("../Fonts/FF.Neuwelt/Neuwelt-ExtraBold.otf");}
+@font-face{font-family: NeuweltBackup; font-weight: bold; src: url("../Fonts/FF.Neuwelt/Neuwelt-ExtraBold.ttf");}
+/*Body, HTML Styling*/
+
+* {
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #242628;
+}
+
+/*Header Styling*/
+header {
+	display: flex;
+	justify-content: center;
+	background-color: #1E2023;
+	background-image: url("../Images/aleksandr-popov-JhYnL-BiP18-unsplash.jpg");
+	background-attachment: scroll;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header img {
+	height: 250px;
+	width: 250px;
+}
+
+/*Nav Styling*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    background-color: #1E2023;
+	border: 1px solid #000;
+	position: sticky;
+	top: 0;	
+	z-index: 1000;
+}
+
+nav p a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-size: 1.6em;
+    padding: 0px 5px;
+	transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav p a:hover {
+    color: #FEE45D;
+    border-bottom: 2px solid #FEE45D;
+}
+
+nav p a.active {
+	color: #FEE45D;
+    border-bottom: 2px solid #FEE45D;
+}
+
+/*Footer styling*/
+footer {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	background-color: #1E2023;
+	border: 1px solid #000;
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	color: #fff;
+}
+
+footer p {
+	border-bottom: 1px solid #fff;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+.contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 15px 0;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+.contact-info li {
+	margin: 15px 0;
+}
+
+.contact-info a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.contact-info a:hover {
+	text-decoration: underline;
+	color: #FEE45D;
+}
+
+.back-to-top {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 10px 15px;
+	font-size: 1em;
+	cursor: pointer;
+	margin: 10px 0;
+	transition: background-color 0.3s ease;
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	margin-bottom: 20px;
+}
+
+.back-to-top:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #FEE45D;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	gap: 65px;
+	margin: 15px 0;
+}
+
+.social a {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+.social a:hover {
+	color: #FEE45D;
+    border-bottom: 2px solid #FEE45D;
+}
+
+/*Hero Section Styling*/
+.hero-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	background-color: #303235;
+	width: 100%;
+	height: 60vh;
+	background-image: url(../Images/danny-howe-bn-D2bCvpik-unsplash.jpg);
+	background-attachment: scroll;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.button-container, .hero-text-container {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-container button {
+	text-decoration: none;
+    background-color: #000;
+    color: #FEE45D;
+    border: 4px solid #fff;
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-weight: bold;
+    cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.hero-text-container {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+.hero-text-container p{
+	text-transform: uppercase;
+	color: #fff;
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-size: 1.6em;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+	width: 75%;
+}
+
+/*Table Styling*/
+.events-section {
+	text-transform: uppercase;
+	padding: 25px;
+}
+
+.events-section h2 {
+	letter-spacing: 0.1em;
+	font-size: 2em;
+	text-decoration: underline;
+	color: #fff;
+	text-align: center;
+	font-family: Neuwelt, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin: 20px 0;
+    font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	table-layout: fixed;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    background-color: #303235;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+th {
+    background-color: #303235;
+    text-decoration: underline;
+}
+
+table tbody td:nth-child(even) {
+    background-color: #1E2023;
+    color: #FEE45D;
+}
+
+table thead th:nth-child(even) {
+	background-color: #1E2023;
+    color: #FEE45D;
+}
+
+/*Form Styling*/
+.contact-wrapper {
+	height: 100%;
+	width: 100%;
+	background-image: url("../Images/imageEditOne.png");
+	background-size: cover;
+}
+
+.contact-heading h2 {
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-size: 2em;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.contact-form {
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.contact-form form {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 85%;
+}
+
+.contact-form form div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact-form form label {
+    color: #fff;
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-size: 2em;
+	width: 20%;
+	margin: 25px 0px;
+}
+
+.contact-form form select, .contact-form form input {
+	color: #fff;
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	padding: 12px 20px;
+	margin: 25px 0px;
+	background-color: #303235;
+	border-radius: 4px;
+	width: 75%;
+	font-size: 1.5em;
+}
+
+.contact-form form button {
+	align-self: center;
+    background-color: #000;
+    color: #fff;
+    border: 4px solid #fff;
+    padding: 15px;
+	margin: 25px 0px;
+    font-size: 1.5em;
+    font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-weight: bold;
+    cursor: pointer;
+	width: 25%;
+}
+
+.contact-form form button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*About Section Styling*/
+.about-container {
+	padding: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	margin: 0 auto;
+}
+
+.about-section {
+	padding: 50px;
+	background-color: #1E2023;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about-section h3 {
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 15px;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+.text-image, .image-text {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.text-image img, .image-text img {
+	width: 80%;
+	height: 80%;
+	border-radius: 8px;
+	margin: 0 auto;
+	filter: grayscale(100);
+}
+
+.text-image p, .image-text p {
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-size: 1.3em;
+	line-height: 1.5;
+	color: #fff;
+}
+
+.about-section:hover {
+	background-color: #000;
+	text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+}
+
+.about-section:hover img {
+	filter: grayscale(0);
+	transform: scale(1.05);
+}
+
+/*Projects Styling*/
+.spotify-projects {
+	display: flex;
+	flex-direction:  column;
+	gap: 10px;
+	background-image: url("../Images/imageEditTwo.png");
+	background-size: cover;
+	padding: 10px;
+}
+
+.spotify-projects h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 2em;
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	padding: 20px;
+	text-decoration: underline;
+}
+
+.spotify-projects iframe {
+	display: block;
+	align-self: center;
+	width: 75%;
+	margin-bottom: 20px;
+}
+
+/*Blog Styling*/
+.blog-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.blog-post {
+	display: flex;
+	align-items: stretch;
+	background-color: #1E2023;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	overflow: hidden;
+	background-image: url("../Images/imageEditThree.png");
+	background-size: cover;
+	border: 1px solid #000;
+	width: 100%;
+	height: 50vh;
+}
+
+.blog-image {
+	width: 30vw;
+	height: 100%;
+	object-fit: cover; 		
+}
+
+.blog-content {
+	padding: 20px;
+	flex-grow: 1;
+	color: #fff;
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+}
+
+.blog-title {
+	margin-top: 0;
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.blog-post p {
+	margin: 10px 0;
+}
+
+/*Animations*/
+.scroll-element {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-element.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Pop up*/
+.popup {
+    font-size: 1.3rem;
+    font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-weight: bold;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-color: rgba(0, 0, 0, 0.5);
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	opacity: 100; 
+}
+
+.hidden {
+	display: none;
+	opacity: 0;
+}
+
+.popup-content {
+  	background-color: #222;
+  	padding: 50px;
+  	border-radius: 10px;
+  	text-align: center;
+  	min-width: 300px;
+  	width: 100%;
+  	max-width: 500px;
+	color: #fff; 
+}
+
+#close-popup, #close-validation-popup {
+  	padding: 10px 20px;
+  	border-radius: 5px;
+	margin-top: 20px;
+    background-color: #000;
+    color: #FEE45D;
+    border: 4px solid #fff;
+    font-size: 1.6rem;
+    font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	font-weight: bold;
+    cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+#close-popup, #close-validation-popup:hover {
+	background-color: #444;
+}
+
+/*Privacy Styling*/
+.privacy{
+	color: #fff;
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+	background-color: #222;
+}
+
+.privacy h1, h2, h3, h4{
+	padding: 0px 30px;
+	margin: 10px 10px;
+	text-decoration: underline;
+}
+
+.privacy p, li {
+	padding: 0px 30px;
+}
+
+/*T&Cs Styling*/
+.terms{
+	color: #fff;
+	font-family: Neuwelt, NeuweltBackup, Arial, sans-serif;
+}
+
+.terms h1, h2, h3, h4{
+	padding: 0px 30px;
+	margin: 10px 10px;
+	text-decoration: underline;
+}
+
+.terms p, li {
+	padding: 0px 30px;
+}
+
+/*Mobile responsive styling*/
+@media screen and (max-width: 600px) {
+	nav {
+		display: none;
+	}
+	
+	.burger-menu {
+		display: block;
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		font-size: 2.5em;
+		color: #fff;
+	}
+	
+	.nav-links {
+		display: none;
+		position: absolute;
+		top: 80px;
+		right: 0;
+		background-color: #1E2023;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.nav-links p {
+		padding: 20px;
+		border-bottom: 1px solid #fff;
+	}
+	
+	.nav-links a {
+		color: #fff;
+		font-size: 1.8em;
+		display: block;
+	}
+	
+	.nav-links.active {
+		display: block;
+	}
+	
+	.hero-section {
+		flex-direction: column;
+		height: 50vh;
+		padding: 20px;
+	}
+	
+	
+	.hero-text-container p {
+		font-size: 1em;
+		width: 100%;
+		text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+	}
+	
+	.button-container button {
+		font-size: 1em;
+		padding: 10px 20px;
+	}
+	
+	.button-container, .hero-text-container {
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.hero-text-container {
+		order: 1;
+	}
+	
+	.button-container {
+		order: 2;
+	}
+	
+	table {
+		width: 100%;
+		margin: 20px auto;
+		table-layout: fixed;
+	}
+	
+	th, td {
+		padding: 15px;
+		font-size: 0.8em;
+	}
+	
+	footer p {
+		font-size: 1em;
+	}
+	
+	.social a {
+		font-size: 1em;
+	}
+	
+	.contact-info {
+		font-size: 1em;
+		text-align: center;
+	}
+	
+	.spotify-projects {
+		gap: 5px;
+		padding: 0;
+	}
+	
+	.spotify-projects iframe {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	
+	.blog-container {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.blog-post {
+		display: block;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	
+	.blog-image {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+	
+	.blog-content {
+		width: 100%;
+	}
+	
+	.blog-title, .blog-text {
+		text-align: center;
+	}
+	
+	.about-container {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	
+	.about-section {
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+	
+	.about-section img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.about-section h3 {
+		font-size: 1.5em;
+		margin-top: 10px;
+	}
+	
+	.about-section p {
+		font-size: 1em;
+		text-align: center;
+		margin-top: 5px;
+	}
+	
+	.contact-form form {
+		width: 90%;
+	}
+	
+	.contact-form form div {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.contact-form form label {
+		width: auto;
+		margin: 0;
+		font-size: 1.5em;
+	}
+	
+	.contact-form form select, .contact-form form input {
+		width: 100%;
+		margin: 0 0 25px 0;
+		font-size: 1.5em;
+	}
+	
+	.contact-form form button {
+		width: 50%;
+		font-size: 1em;
+	}
+}
+
+/*Tablet Responsive Styling*/
+@media screen and (min-width: 601px) and (max-width: 1024px){
+	.burger-menu {
+		display: none;
+	}
+	
+	nav {
+		display: flex;
+	}
+	
+	nav p a {
+		font-size: 1.2em;
+	}
+	
+	.about-container {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	
+	.about-section {
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+	
+	.about-section img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.about-section h3 {
+		font-size: 1.5em;
+		margin-top: 10px;
+	}
+	
+	.about-section p {
+		font-size: 1em;
+		text-align: center;
+		margin-top: 5px;
+	}
+	
+	.contact-heading h2 {
+		font-size: 1.5em;
+	}
+
+	.contact-form form {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.contact-form form label {
+		font-size: 1.5em;
+		width: 30%;
+	}
+
+	.contact-form form select, .contact-form form input {
+		width: 100%;
+		font-size: 1em;
+	}
+
+	.contact-form form button {
+		font-size: 1em;
+		width: 30%;
+	}
+	
+	.hero-text-container p{
+		font-size: 1.3em;
+		width: 75%;
+	}
+	
+	.button-container button {
+		font-size: 1.3rem;
+	}
+}
