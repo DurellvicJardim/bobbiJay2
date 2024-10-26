@@ -99,11 +99,13 @@ footer p {
 
 .contact-info li {
 	margin: 15px 0;
+	text-align: center;
 }
 
 .contact-info a {
 	color: #fff;
 	text-decoration: none;
+	text-decoration: underline;
 }
 
 .contact-info a:hover {
@@ -170,7 +172,7 @@ footer p {
 	align-items: center;
 }
 
-.button-container button {
+.button-container a {
 	text-decoration: none;
     background-color: #000;
     color: #FEE45D;
@@ -183,7 +185,7 @@ footer p {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.button-container button:hover {
+.button-container a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
 }
