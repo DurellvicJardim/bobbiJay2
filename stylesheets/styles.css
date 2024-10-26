@@ -383,7 +383,7 @@ table thead th:nth-child(even) {
 
 .about-section:hover img {
 	filter: grayscale(0);
-	transform: scale(1.05);
+	transform: scale(1.01);
 }
 
 /*Projects Styling*/
@@ -450,7 +450,6 @@ table thead th:nth-child(even) {
 	margin-top: 0;
 	font-size: 2em;
 	font-weight: bold;
-	text-decoration: underline;
 }
 
 .blog-post p {
@@ -619,6 +618,7 @@ table thead th:nth-child(even) {
 	
 	.hero-text-container {
 		order: 1;
+		text-align: start;
 	}
 	
 	.button-container {
@@ -680,8 +680,8 @@ table thead th:nth-child(even) {
 		width: 100%;
 	}
 	
-	.blog-title, .blog-text {
-		text-align: center;
+	.blog-title, .blog-content p{
+		text-align: start;
 	}
 	
 	.about-container {
@@ -710,6 +710,7 @@ table thead th:nth-child(even) {
 		text-align: center;
 		margin-top: 5px;
 	}
+	
 	
 	.contact-form form {
 		width: 90%;
@@ -806,6 +807,7 @@ table thead th:nth-child(even) {
 	.hero-text-container p{
 		font-size: 1.3em;
 		width: 75%;
+		text-align: start;
 	}
 	
 	.button-container button {
